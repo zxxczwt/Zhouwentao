@@ -1,0 +1,206 @@
+body{
+    background-color: silver;
+}
+
+/* 登录框设置 */
+.Sign-wrapper{
+    width: 400px;
+    height: 495px;
+    background-color: white;
+    margin: 100px auto;      
+}
+
+/* 超链接 */
+.Sign-header a{
+    text-decoration: none;
+    color: #444444;
+}
+/* 头部设置 */
+.Sign-header{
+    width: 352px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.Sign-header div{
+    /* 设置浮动 */
+    float: left;
+}
+
+/* 设置免密码登录 */
+.Sign-Nopassword{
+    width: 80px;
+    height: 60px;
+    color:#444444;
+    font: 16px;
+    line-height: 60px;
+    margin: 0 24px 0 0;
+}
+
+/* 设置密码登录 */
+.Sign-Needpassword{
+    width: 64px;
+    height: 60px;
+    line-height: 60px;
+    color:#121212;
+    font: 15px;
+    font-weight: bolder;
+    margin: 0 24px 0 0;
+    border-bottom: 4px solid blue;
+}
+
+/* 设置二维码 */
+.QR-code{
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    position: absolute;
+    left: 310px;   
+}
+
+/* 主体设置 */
+.Input{
+    width: 352px;
+    height: 48px;
+    line-height: 48px;
+    outline-width: 0ch;
+    margin: 12px 24px;
+    border: 0;
+    border-bottom: 1px solid #808080;
+}
+
+/* 设置海外手机号和忘记密码 */
+.option{
+    width: 352px;
+    height: 20px;
+    background: transparent;
+    margin: 0 24px 0;
+    padding: 15px 0;
+    /* flex布局 */
+    display: flex;
+    justify-content: space-between;
+}
+
+.Oversea,.ForgetPassword{
+    border: none;
+    background-color: white;
+}
+
+.Oversea{
+    color: #175199;
+}
+
+.Oversea a,.ForgetPassword a,.tips a,.Social-login a,.Sign-bottom a{
+    text-decoration: none;
+}
+
+.Oversea a:hover{
+    color: #8590A6;
+}
+
+.ForgetPassword a{
+    color: #8590A6;
+}
+
+/* 登录按钮 */
+.Login{
+    width: 352px;
+    height: 36px;
+    margin: 12px 24px 30px;
+    color: white;
+    border-style: none;
+    background-color: #0066ff;
+    border-radius: 2px;
+}
+
+.Login:hover{
+    background-color: #005ce6;
+}
+
+.tips-wrapper{
+    width: 400px;
+    height: 58px;;
+}
+
+.tips{
+    width: 352px;
+    height: 100%;
+    /* 刚开始的时候设置行高为32px，导致显示不正确 */
+    margin: 0 24px 18px 24px ;
+    padding: 5px;
+    color: #808080;
+    font-size: 13px;
+}
+
+.tips a{
+    color: #808080;
+}
+
+.Sign-Social{
+    width: 400px;
+    height: 60px;
+}
+
+.Social-login{
+    width: 90px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 9px;
+    margin: 0 0 0 24px;
+
+}
+
+.Social-login a{
+    color: #8095a6;
+}
+
+.wechat,.qq,.weibo{
+    height: 60px;
+    line-height: 60px;
+    float: right;
+    margin: 0 24px 0 24px;
+    font-size:9px ;
+}
+
+.wechat a,.qq a,.weibo a{
+    text-decoration: none;
+    color: #8590A6;
+    font-size: 14px;
+}
+
+.icon-sc{
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.Sign-bottom{
+    width: 400px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around; 
+    background-color: #F6F6F6; 
+    line-height: 60px;
+}
+
+.Sign-bottom a{
+    color: #0022ff;
+}
+
+.Sign-bottom span{
+    color: #8095a6;
+}
+
+.icon-zhihu{
+    width: 21px;
+    height: 21px;
+}
+
+.icon-check{
+    width: 20px;
+    height: 20px;
+    /* style="position:relative; top:4px;  该代码是html文件中，目的是使图标下移4px*/
+}
+
+
