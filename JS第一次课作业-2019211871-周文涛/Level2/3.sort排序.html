@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sort排序</title>
+    <script>
+        var arr = [{ name: 'xiaoming', age: 18 }, { name: 'zhangsan', age: 34 },
+        { name: 'lisi', age: 29 }, { name: 'wangwu', age: 24 }];
+
+        function sortby(key, way = true) {
+            // 未输入way的值表示默认升序
+            if (way == undefined) {
+                way = 1;
+            }
+            else {
+                way = (way) ? 1 : -1;
+            }
+
+            return function (a, b) {
+                a = a[key];
+                b = b[key];
+                if (a < b) {
+                    return way * -1;
+                }
+                if (a > b) {
+                    return way * 1;
+                }
+                return 0;
+            }
+        }
+
+        console.log(arr.sort(sortby('age'))) //[{name: "xiaoming", age: 18},{name: "wangwu", age: 24},{name: "lisi", age: 29},{name: "zhangsan", age: 34}]
+        console.log(arr.sort(sortby('name', false))) //[{name: "zhangsan", age: 34},{name: "xiaoming", age: 18},{name: "wangwu", age: 24},{name: "lisi", age: 29}]
+
+//因为浏览器console.log输出引用的原因，测试的时候可以将另一句不用的console语句注释起来，避免对测试结果产生影响
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

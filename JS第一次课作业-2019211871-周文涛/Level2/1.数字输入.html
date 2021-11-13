@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数字输入</title>
+    <script>       
+        var num = prompt("请输入一个数字:");
+        function checkInput(num){
+            var num1 = Number(num);
+            if(!isNaN(num1)){
+                alert('你输入的数字平方后为:' + num1*num1);
+            } 
+            else{
+                var num = prompt('你未输入正确的数字，请重新输入:');
+                checkInput(num);
+            }      
+        }
+        checkInput(num);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
